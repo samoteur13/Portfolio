@@ -1,0 +1,49 @@
+main {
+    background-color: black;
+    color: white;
+}
+
+main img {
+    color: red;
+}
+
+.description {
+    color: #0B6623;
+}
+
+.class {
+    color: #3BB143;
+}
+
+.objet {
+    color: #1f8eed;
+}
+
+.h2size {
+    font-size: 1.5em;
+}
+
+.while {
+    color: #9e6cc2;
+}
+
+.string {
+    color: rgb(195, 139, 66);
+}
+
+.number {
+    color:rgb(122, 185, 122) ;
+}
+
+.function {
+    color: rgb(223, 223, 97);
+}
+
+.const{
+    color: blue;
+}
+
+.variable{
+    color: #95C8D8;
+}
+

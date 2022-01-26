@@ -1,0 +1,10 @@
+
+.initText {
+    font-size: 13px;
+    color: black;
+    position: absolute;
+    top: 29%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+}
+
