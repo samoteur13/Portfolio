@@ -50,3 +50,5 @@ app.get('/contact', (request, response) => {
 
     })
 })
+
+const bonjour = "test de checkout"
