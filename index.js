@@ -44,10 +44,9 @@ app.get('/porteFolio', (request, response) => {
     })
 })
 
+
 app.get('/contact', (request, response) => {
     response.render('contact.twig', {
 
     })
 })
-
-
