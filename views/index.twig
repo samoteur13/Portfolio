@@ -2,44 +2,27 @@
 <html lang="en">
 	<head>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
-
+		<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="./assets/main.css"/>
+		<link rel="stylesheet" href="./assets/template.css"/>
 		<meta charset="UTF-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Accueil</title>
 	</head>
-	<body>
+	<body
+		class="d-flex flex-column min-vh-100 justify-content-between">
 		<!-- header -->
 		{% include "header.twig" with { 'activeNav' : 'home'} %}
-		<main>
-			<section class="row  mx-auto">
-				<div class="ecran col-md-8  mx-auto">
-					<img class="pcFace" src="./assets/home/picture/pcFace.png" width="100%" alt="monitor"/>
-					<div class=" initText col-md-8 col-sm-4">
-						<p>
-							<span class="text-success">
-								C: \User\oneDrive\bureau\init 
-							</span class="text-black color-black"> <br/>
-							npm init
-							<br/>
-							loading ............. / Portfolio Samy Chabani
-							<br/>
-							succé
-							<br/>
-							serveur lancer
-							<br/>
-							<br/>
-							Curieux et ambitieux, je souhaite poursuivre mon parcours professionnel dans le
-															              domaine
-							<br/>
-							informatique. A l'aise devant un ordinateur et fort de mes expériences passées, mon
-															              but
-							<br/>
-							à ce jour est de mettre en pratiques mes compétences acquises pour ainsi débuter une
-							<br/>
-							carrière de Développeur WEB.
-						</p>
+		<main id="animation">
+			<section id="grandEcran" class="row  mx-auto">
+				<div
+					id="ecran" class=" col-7 mx-auto d-flex align-items-center">
+					{# <img class="pcFace" src="./assets/home/picture/pcFace.png" width="100%" alt="monitor"/> #}
+					<div id="initText" class="initText col-6 mx-auto">
+						<p class="text-black  headerWindow"><img src="./assets/home/picture/test.png" alt="img">Cv portfolio - C:\User...</p>
+						<p class="text-success">C:\Users\Bureau\portFolio</p>
+						<p id="myText" class="ms-1"></p>
 					</div>
 
 				</div>
@@ -47,6 +30,9 @@
 		</main>
 		<!-- footer -->
 		{% include "footer.twig" %}
+		<script src="/assets/js/main.js"></script>
 	</body>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	<script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>

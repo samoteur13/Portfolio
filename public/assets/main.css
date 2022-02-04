@@ -1,10 +1,47 @@
+@media (max-width: 600px) {
+    #initText {
+        overflow-x: hidden;
+        height: 135px;
+        width: 187px;
+        font-size: 12px;
 
-.initText {
-    font-size: 13px;
-    color: black;
-    position: absolute;
-    top: 29%;
-    left: 62%;
-    transform: translate(-50%, -50%);
+    }
+}
+
+
+
+#initText {
+    display: none;
+    background-color: black;
+    color: white;
+    overflow: scroll;
+    padding-bottom: 7px;
+    overflow-x: hidden;
+
+}
+
+.headerWindow {
+    background-color: white;
+}
+
+.headerWindow img {
+    width: 20px;
+    margin: 3px;
+}
+
+#grandEcran {
+    background: url('home/picture/pcFace.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#ecran {
+    height: 540px;
+
+}
+
+#myText::first-letter {
+    color:rgb(29, 28, 28);
 }
 
