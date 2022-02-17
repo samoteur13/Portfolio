@@ -1,7 +1,6 @@
 {
   "name": "cv",
   "version": "1.0.0",
-  "description": "",
   "main": "serveur.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,5 +13,14 @@
     "express": "^4.17.2",
     "pug": "^3.0.2",
     "twig": "^1.15.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samoteur13/Portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samoteur13/Portfolio/issues"
+  },
+  "homepage": "https://github.com/samoteur13/Portfolio#readme",
+  "description": ""
 }

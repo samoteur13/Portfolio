@@ -1,7 +1,8 @@
-<header class="border-bottom ">
+<header
+	class="border-bottom ">
 
 
-<!--           barre de nav desktop                           -->
+	<!--           barre de nav desktop                           -->
 	<div class="px-3 py-2  text-white d-none d-sm-block">
 		<div class="container">
 			<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -30,7 +31,7 @@
 							<svg class="bi d-block mx-auto mb-1" width="24" height="24">
 								<use xlink:href="#table"></use>
 							</svg>
-							<b>Port Folio</b>
+							<b>Portfolio</b>
 						</a>
 					</li>
 					<li>
@@ -41,58 +42,59 @@
 							<b>Contact</b>
 						</a>
 					</li>
-				</li>
-			</ul>
+				</ul>
+			</div>
 		</div>
 	</div>
-</div>
 
-<!--            barre de nav responsiv                         -->
-<div class="pos-f-t  d-block d-sm-none">
-	<div class="collapse" id="navbarToggleExternalContent">
-		<div class="bg-dark p-4">
-			<ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-				<li>
-					<a href="/" class="nav-link {% if activeNav == 'home' %}text-secondary{% else %}text-white{% endif %}">
-						<svg class="bi d-block mx-auto mb-1" width="24" height="24">
-							<use xlink:href="#home"></use>
-						</svg>
-						<b>Accueil</b>
-					</a>
-				</li>
-				<li>
-					<a href="/cv" class="nav-link {% if activeNav == 'cv' %}text-secondary{% else %}text-white{% endif %}">
-						<svg class="bi d-block mx-auto mb-1" width="24" height="24">
-							<use xlink:href="#speedometer2"></use>
-						</svg>
-						<b>CV</b>
-					</a>
-				</li>
+	<!--            barre de nav responsiv                         -->
+	<div class="pos-f-t  d-block d-sm-none">
+		<div class="collapse" id="navbarToggleExternalContent">
+			<div class="bg-dark p-4">
+				<ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+					<li>
+						<a href="/" class="nav-link {% if activeNav == 'home' %}text-secondary{% else %}text-white{% endif %}">
+							<svg class="bi d-block mx-auto mb-1" width="24" height="24">
+								<use xlink:href="#home"></use>
+							</svg>
+							<b>Accueil</b>
+						</a>
+					</li>
+					<li>
+						<a href="/cv" class="nav-link {% if activeNav == 'cv' %}text-secondary{% else %}text-white{% endif %}">
+							<svg class="bi d-block mx-auto mb-1" width="24" height="24">
+								<use xlink:href="#speedometer2"></use>
+							</svg>
+							<b>CV</b>
+						</a>
+					</li>
 
-				<li>
-					<a href="/porteFolio" class="nav-link  {% if activeNav == 'portfolio' %}text-secondary{% else %}text-white{% endif %}">
-						<svg class="bi d-block mx-auto mb-1" width="24" height="24">
-							<use xlink:href="#table"></use>
-						</svg>
-						<b>PorteFolio</b>
-					</a>
-				</li>
-				<li>
-					<a href="/contact" class="nav-link  {% if activeNav == 'contact' %}text-secondary{% else %}text-white{% endif %}">
-						<svg class="bi d-block mx-auto mb-1" width="24" height="24">
-							<use xlink:href="#grid"></use>
-						</svg>
-						<b>Contact</b>
-					</a>
-				</li>
-			</li>
-		</ul>
+					<li>
+						<a href="/porteFolio" class="nav-link  {% if activeNav == 'portfolio' %}text-secondary{% else %}text-white{% endif %}">
+							<svg class="bi d-block mx-auto mb-1" width="24" height="24">
+								<use xlink:href="#table"></use>
+							</svg>
+							<b>PorteFolio</b>
+						</a>
+					</li>
+					<li>
+						<a href="/contact" class="nav-link  {% if activeNav == 'contact' %}text-secondary{% else %}text-white{% endif %}">
+							<svg class="bi d-block mx-auto mb-1" width="24" height="24">
+								<use xlink:href="#grid"></use>
+							</svg>
+							<b>Contact</b>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+
+		<nav class="navbar navbar-dark bg-dark">
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</nav>
 	</div>
-</div>
-
-<nav class="navbar navbar-dark bg-dark">
-
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-</nav></div></header>
+</header>

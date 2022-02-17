@@ -24,7 +24,7 @@ app.get('/header.twig', (request, response) => {
     })
 })
 app.get('/PorteFolio.html', (request, response) => {
-    response.render('PorteFolio.twig', {
+    response.render('porteFolio.twig', {
 
     })
 })
