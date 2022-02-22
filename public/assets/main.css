@@ -31,10 +31,10 @@
 }
 
 #grandEcran {
-    background: url('home/picture/pcFace.webp');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    /* background: url('home/picture/pcFace.webp'); */
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
 }
 
 #ecran {
