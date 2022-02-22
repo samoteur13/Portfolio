@@ -2,10 +2,12 @@
 <html lang="en">
 	<head>
 		<meta name="description" content="Portfolio  samy CHABANI">
-    <meta name="keywords" content="contacter moi, Portfolio">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-    <meta name="author" content="Samy CHABANI">
-    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3135/3135788.png"/>
+		<meta name="keywords" content="contacter moi, Portfolio">
+		<meta
+		name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- displays site properly based on user's device -->
+		<meta name="author" content="Samy CHABANI">
+		<link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3135/3135788.png"/>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
 		<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="./assets/template.css"/>
@@ -25,19 +27,22 @@
 							Contactez moi.
 						</div>
 						<div class="card-body">
-							<form method="post" action="test">
+							{% if message %}
+								<span>{{message}}</span>
+							{% endif %}
+							<form method="post" action="/contact">
 								<div class="form-group">
 									<label for="name">Nom</label>
-									<input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Entrez votre nom" required="">
+									<input type="text" class="form-control" name="name" id="name" aria-describedby="emailHelp" placeholder="Entrez votre nom" required="">
 								</div>
 								<div class="form-group">
 									<label for="email">mail</label>
-									<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Entrez votre mail" required="">
+									<input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Entrez votre mail" required="">
 									<small id="emailHelp" class="form-text text-muted">Dans quel domaine puis-je vous aidez</small>
 								</div>
 								<div class="form-group">
 									<label for="message">Message</label>
-									<textarea class="form-control" id="message" rows="6" required=""></textarea>
+									<textarea class="form-control" name="message" id="message" rows="6" required=""></textarea>
 								</div>
 								<div class="mx-auto">
 									<button type="submit" class="btn bg-black btn-primary text-right">Envoyez</button>
@@ -52,7 +57,9 @@
 							<i class="fa fa-home"></i>
 							Adresse</div>
 						<div class="card-body">
-							<p><b>Samy CHABANI</b></p>
+							<p>
+								<b>Samy CHABANI</b>
+							</p>
 							<p>13012 Marseille</p>
 							<p>France</p>
 							<p>email : s.chabani13@gmail.com</p>
@@ -66,7 +73,7 @@
 		</div>
 		{% include "footer.twig" %}
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	</body>
-	
+
 </html>

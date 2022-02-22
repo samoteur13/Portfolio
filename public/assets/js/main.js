@@ -4,7 +4,6 @@ const textInit = document.getElementById('initText')
 const myText = document.getElementById('myText')
 const animation = document.getElementById('animation')
 const background = document.getElementById('grandEcran')
-console.log(background)
 
 function domReady(f) {
     if (document.readyState === 'complete') {
