@@ -31,7 +31,7 @@
 }
 
 #grandEcran {
-    background: url('home/picture/pcFace.png');
+    background: url('home/picture/pcFace.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
