@@ -1,13 +1,16 @@
 
-
-
 body {
     font-family:sans-serif;
-    background-color: #F9FAFB;
+    background:url(../assets/home/picture/background.jpg);
+    background-size: cover;
 }
 
 
 svg {
+    color: white;
+}
+
+div svg {
     color: black;
 }
 

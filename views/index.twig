@@ -22,15 +22,27 @@
 		<!-- header -->
 		{% include "header.twig" with { 'activeNav' : 'home'} %}
 		<main id="animation">
-			<section id="grandEcran" class="row  mx-auto">
-				<div id="ecran" class=" col-7 mx-auto d-flex align-items-center">
-					<div id="initText" class="initText col-6 mx-auto">
-						<p class="text-black  headerWindow"><img src="./assets/home/picture/test.png" height="20" width="15" alt="img">Cv portfolio - C:\User...</p>
-						<p class="text-success">C:\Users\Bureau\portFolio</p>
-						<p id="myText" class="ms-1"></p>
+			<div class="row container-fluid m-0">
+				<section id="grandEcran" class="row mx-auto col-12 col-md-6">
+					<div id="ecran" class=" col-7 mx-auto d-flex align-items-center justify-content-center">
+						<div id="initText" class="initText col-12 mx-auto">
+							<p class="text-black  headerWindow"><img src="./assets/home/picture/test.png" height="20" width="15" alt="img">Cv portfolio - C:\User...</p>
+							<p class="text-success">C:\Users\Bureau\portFolio</p>
+							<p id="myText" class="ms-1"></p>
+						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+				<section id="aPropos" class="col-12 mx-auto col-md-6 ">
+					<h1 class="text-center text-white">A propos de moi</h1>
+					<div></div>
+					<div class="mx-auto col-5">
+						<img class="w-100 mx-auto" src="./assets/home/picture/Moi.png" alt="photo de moi">
+					</div>
+						<p class="h4 text-white">Curieux et ambitieux, je souhaite poursuivre mon parcours professionnel dans le domaine informatique.</p>
+						<p class="h4 text-white">A l'aise devant un ordinateur et fort de mes expériences passées, </p>
+						<p class="h4 text-white">mon but à ce jour est de mettre en pratiques mes compétences acquises pour ainsi débuter une carrière de Développeur WEB.</p>
+				</section>
+			</div>
 		</main>
 		<!-- footer -->
 		{% include "footer.twig" %}
@@ -38,4 +50,4 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	</body>
-</html>
+</html></body></html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta name="description" content="Portfolio  samy CHABANI">
+	<meta name="description" content="Portfolio  samy CHABANI">
     <meta name="keywords" content="CV, Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
     <meta name="author" content="Samy CHABANI">
@@ -17,14 +17,13 @@
 	</head>
 	<body
 		class=" min-vh-100 d-flex flex-column justify-content-between">
-
 		<!-- header -->
 		{% include "header.twig" with { 'activeNav' : 'cv'} %}
-		<div class="mt-5 d-flex container-fluid flex-column justify-content-center align-items-center">
-			<div style="overflow:hidden;width:100%" class="header ">
+		<div class="p-0 mt-5 mb-5 d-flex container flex-column justify-content-center align-items-center">
+			<div style="overflow:hidden;width:100%" class="header">
 				<img class="ms-2 mt-2 mb-2" src="./assets/home/picture/vscode.png" width="25px" alt="JavaScript"/>
 			</div>
-			<iframe src="/homCv" title="Mon cv en language JavaScript" frameborder="0">></iframe>
+			<iframe  src="/homCv" title="Mon cv en language JavaScript"  frameborder="0">></iframe>
 		</div>
 		<!-- footer -->
 		{% include "footer.twig" %}
