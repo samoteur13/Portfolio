@@ -60,10 +60,7 @@ app.get('/nav', (request, response) => {
     response.render('./nav/_nav.html.twig')
 })
 
-//page d'acceill du cv
-app.get('/homCv', (request, response) => {
-    response.render('./cvIframe/home.html.twig')
-})
+
 
 //page Moi du cv
 app.get('/moi', (request, response) => {
@@ -87,7 +84,7 @@ app.get('/formation', (request, response) => {
 
 
 
-
+//---------------------------------page portfolio
 app.get('/porteFolio', (request, response) => {
     response.render('porteFolio.twig', {
 
@@ -95,8 +92,7 @@ app.get('/porteFolio', (request, response) => {
 })
 
 
-
-
+// --------------------------------page de contact
 app.get('/contact', (request, response) => {
 
     response.render('contact.twig', {
