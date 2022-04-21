@@ -1,4 +1,4 @@
-const twig = require('twig')
+nconst twig = require('twig')
 const bodyParser = require('body-parser')
 const express = require('express'); //importe express
 const { response } = require('express');
@@ -6,7 +6,6 @@ const app = express() //instentie
 const Helper = require('./helper/machineEcrire');
 const nodemailer = require("nodemailer"); 
 const email = require("./config.js");
-
 
 
 
