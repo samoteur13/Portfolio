@@ -5,7 +5,7 @@ const { response } = require('express');
 const app = express() //instentie
 const Helper = require('./helper/machineEcrire');
 const nodemailer = require("nodemailer"); 
-const email = require("./config.js");
+// const email = require("./config.js");
 
 
 
@@ -14,8 +14,8 @@ const email = require("./config.js");
 let transporter = nodemailer.createTransport({
     service: 'gmail', // car mon adresse est en gmail. si autre (hotmail) changer cette config
     auth: {
-      user: email.Config.mail, // j'aurai pu mettre direct mon adresse mail mais elle aurait été visible sur github
-      pass: email.Config.mailPass // pareil que le commentaire au dessus
+      user: 'myUsermail', 
+      pass: 'myMailPassword'
     }
   });
   // fin du tranporteur pour nodemailer
